@@ -1,7 +1,7 @@
 "# encuestaDevelMVC" 
 # 📝 Plataforma de Encuestas Dinámicas - Devel Systems
 
-Este proyecto ha sido desarrollado como parte de una prueba técnica para Devel Systems.  
+Este proyecto ha sido desarrollado para Devel Systems.  
 Consiste en una aplicación web construida con **ASP.NET MVC 5** y **SQL Server**, que permite la creación, gestión y publicación de encuestas dinámicas, así como la recolección y visualización de resultados en tiempo real.
 
 ---
@@ -81,9 +81,31 @@ La plataforma está diseñada para permitir a un administrador autenticado:
 
 ---
 
-## 📸 Capturas y demo
 
-(agregar capturas o enlaces al demo si están disponibles)
+## 📸 Capturas del Sistema
+
+### 🏠 Página de Inicio
+![Inicio](assets/pagina_inicio.png)
+
+### 🔐 Login
+![Login](assets/login.png)
+
+### 🧾 Crear Encuesta
+![Crear Encuesta](assets/crear_encuesta.png)
+
+### 🔧 Crear Campos Personalizados
+![Crear Campos](assets/crear_campos.png)
+
+### 📄 Detalle de Encuesta
+![Detalle Encuesta](assets/detalle_encuesta.png)
+
+### 📥 Contestar Encuesta (vista pública)
+![Encuesta Pública](assets/encuesta_publica.png)
+
+### 📊 Resultados de Encuesta
+![Resultados](assets/resultados.png)
+
+
 
 ---
 
