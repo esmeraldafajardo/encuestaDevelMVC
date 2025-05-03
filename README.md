@@ -85,25 +85,25 @@ La plataforma está diseñada para permitir a un administrador autenticado:
 ## 📸 Capturas del Sistema
 
 ### 🏠 Página de Inicio
-![Inicio](assets/pagina_inicio.png)
+![Inicio](assets/pagina_inicio.PNG)
 
 ### 🔐 Login
-![Login](assets/login.png)
+![Login](assets/login.PNG)
 
 ### 🧾 Crear Encuesta
-![Crear Encuesta](assets/crear_encuesta.png)
+![Crear Encuesta](assets/crear_encuesta.PNG)
 
 ### 🔧 Crear Campos Personalizados
-![Crear Campos](assets/crear_campos.png)
+![Crear Campos](assets/crear_campos.PNG)
 
 ### 📄 Detalle de Encuesta
-![Detalle Encuesta](assets/detalle_encuesta.png)
+![Detalle Encuesta](assets/detalle_encuesta.PNG)
 
 ### 📥 Contestar Encuesta (vista pública)
-![Encuesta Pública](assets/encuesta_publica.png)
+![Encuesta Pública](assets/encuesta_publica.PNG)
 
 ### 📊 Resultados de Encuesta
-![Resultados](assets/resultados.png)
+![Resultados](assets/resultados.PNG)
 
 
 
