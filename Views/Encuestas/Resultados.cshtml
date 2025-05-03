@@ -1,0 +1,38 @@
+﻿@model IEnumerable<EncuestasMVC.Models.RespuestaViewModel>
+
+@{
+    ViewBag.Title = "Resultados de la Encuesta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var encuesta = ViewBag.Encuesta as EncuestasMVC.Models.Encuesta;
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Resultados: @encuesta.Nombre</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning">Aún no hay respuestas para esta encuesta.</div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Token</th>
+                    <th>Campo</th>
+                    <th>Respuesta</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var r in Model)
+                {
+                    <tr>
+                        <td>@r.Token</td>
+                        <td>@r.Campo</td>
+                        <td>@r.Valor</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

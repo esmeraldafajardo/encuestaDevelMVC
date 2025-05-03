@@ -1,0 +1,40 @@
+﻿@model List<EncuestasMVC.Models.Campo>
+@{
+    ViewBag.Title = "Responder Encuesta";
+}
+
+<h2>@ViewBag.EncuestaNombre</h2>
+
+@using (Html.BeginForm("Responder", "Publico", FormMethod.Post))
+{
+    @Html.Hidden("token", ViewBag.Token as string)
+
+    foreach (var campo in Model)
+    {
+        <div class="form-group">
+            <label>@campo.Titulo</label>
+
+            @switch (campo.TipoCampo.ToLower())
+            {
+                case "texto":
+                    @Html.TextBox(campo.Id.ToString(), "", new { @class = "form-control" })
+                    break;
+
+                case "número":
+                case "numero":
+                    @Html.TextBox(campo.Id.ToString(), "", new { type = "number", @class = "form-control" })
+                    break;
+
+                case "fecha":
+                    @Html.TextBox(campo.Id.ToString(), "", new { type = "date", @class = "form-control" })
+                    break;
+
+                default:
+                    @Html.TextBox(campo.Id.ToString(), "", new { @class = "form-control" })
+                    break;
+            }
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+}

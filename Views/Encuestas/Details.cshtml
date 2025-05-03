@@ -1,0 +1,44 @@
+﻿@model EncuestasMVC.Models.Encuesta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Encuesta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+    </dl>
+    @if (!string.IsNullOrEmpty(Model.Token))
+    {
+        <div class="form-group">
+            <hr />
+            <strong>Link para responder la encuesta:</strong><br />
+            <a href="@Url.Action("Responder", "Publico", new { id = Model.Token }, Request.Url.Scheme)" target="_blank">
+                @Url.Action("Responder", "Publico", new { id = Model.Token }, Request.Url.Scheme)
+            </a>
+        </div>
+    }
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

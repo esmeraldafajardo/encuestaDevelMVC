@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Bienvenido";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="text-center">
+        <img src="https://www.develsystems.com/images/LogoSystems.png" alt="Devel Systems" style="max-height: 60px;" class="mb-3" />
+
+        <h1 class="display-4">Bienvenido al Sistema de Encuestas</h1>
+        <p class="lead">Diseñado para Devel Systems – Encuestas dinámicas, públicas y fáciles de gestionar.</p>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">👥 Administrar Encuestas</h5>
+                    <p class="card-text">Crea, edita y elimina encuestas personalizadas.</p>
+                    <a href="@Url.Action("Index", "Encuestas")" class="btn btn-primary">Ver Encuestas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-4 mt-md-0">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">🧩 Campos Personalizados</h5>
+                    <p class="card-text">Agrega preguntas tipo texto, número o fecha.</p>
+                    <a href="@Url.Action("Index", "Campos")" class="btn btn-success">Ver Campos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-4 mt-md-0">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">📊 Resultados</h5>
+                    <p class="card-text">Revisa y analiza las respuestas recibidas.</p>
+                    <a href="@Url.Action("Index", "Encuestas")" class="btn btn-primary">Ver Encuestas</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
